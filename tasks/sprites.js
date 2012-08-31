@@ -42,7 +42,7 @@ module.exports = function(grunt) {
                     // add the image filename to the processed images array
                     processedImageFiles.push(image);
                     // check if all images are processed
-                    if (imagesRead === (imageCount -1)) {
+                    if (imagesRead === imageCount) {
                         runSpriteGenerator(allImages);
                     }
                 });
